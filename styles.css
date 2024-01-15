@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0409;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 90rem;
+  width: 90%;
+  margin: 13rem auto;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.input {
+  padding: 1rem 5rem;
+  margin: 3rem auto;
+  outline: none;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 2rem;
+}
+
+.input::placeholder {
+  font-weight: bold;
+  text-align: center;
+}
+
+#unit {
+  padding: 1rem 3rem;
+  background-color: #0099;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 1rem;
+}
+
+.boton {
+  padding: 1.3rem 5rem;
+  background-color: #060;
+  border: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+p {
+  font-size: 2rem;
+  background-color: #505;
+  display: inline-block;
+  margin: 2.5rem auto;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  color: white;
+  z-index: 10;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1;
+  }
+
+  .input {
+    width: 90%;
+    order: 2;
+    margin: 1rem auto;
+  }
+
+  #unit {
+    width: 80%;
+    margin: 2rem auto 1rem auto;
+    order: 1;
+  }
+
+  .boton {
+    margin-top: 1rem;
+    order: 3;
+  }
+
+  p {
+    width: 90%;
+    order: 4;
+  }
+}
